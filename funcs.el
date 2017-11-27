@@ -10,6 +10,16 @@
 ;;; License: MIT
 
 (defun send-solution-to-exercism ()
-  "Simple function."
+  "Send the solution to Exercism.io! This command simply send the buffer-file as a solution to Exercism.io."
   (interactive)
   (message (shell-command-to-string (concat "exercism submit " (buffer-file-name)))))
+
+(defun fetch-new-exercise ()
+  "Fetch a new exercise from Exercism.io! This command fetch new exercise based on opened buffer-file type/`extension`."
+  (interactive)
+  (let ((language-name (pcase (file-name-extension (buffer-file-name))
+                         ("clj" "clojure")
+                         ("cljs" "clojurescript")
+                         ("java" "java")
+                         ("el" "just-for-test"))))
+    (message (shell-command-to-string (concat "exercism fetch " language-name)))))
