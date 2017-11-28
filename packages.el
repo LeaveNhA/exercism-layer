@@ -11,14 +11,8 @@
 ;; [TODO ask, is seperation of mode and layer important ?]
 
 (defconst exercism-layer-packages
-  '(evil-magit (exercism-mode :location (recipe :fetcher github
+  '((exercism-mode :location (recipe :fetcher github
                                                 :repo "LeaveNhA/exercism-mode"))))
-
-(defun exercism-layer/post-init-evil-magit ()
-  (with-eval-after-load 'magit
-    (require 'evil-magit)
-    (evil-define-key 'motion magit-mode-map
-      (kbd dotspacemacs-leader-key) spacemacs-default-map)))
 
 (defun exercism-layer/init-exercism-mode ()
   (use-package exercism-mode
