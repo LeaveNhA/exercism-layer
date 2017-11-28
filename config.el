@@ -1,4 +1,4 @@
-;;; funcs.el --- Exercism.io Layer functions File for Spacemacs
+;;; config.el --- exercism.io layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2017 by Seçkin KÜKRER
 ;;
@@ -8,4 +8,3 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; License: MIT
-;; [moved, exercism-mode functions]
