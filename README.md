@@ -16,16 +16,23 @@ After installation. The keybinds are loaded automatically.
 
 ### Fetch-ing new exercise from Exercism.io
 
-> Press; `SPC Exf`.
+> Press; `SPC Exf`. Exercism-layer Fetch another problem for you in same language you are working on.
 
 ![layer-fetch-gif](./resources/images/exercism-layer-fetch.gif "Layer Fetch function gif")
+
+### Fetch-ing new exercise for another language
+
+> Press; `SPC Exf` while you're not in a specific language file or dedicated buffer for it.
+
+![layer-fetch-free](./resources/images/exercism-fetch-free-show.gif "Layer Fetch function gif")
+
+![layer-fetch-free](./resources/images/exercism-fetch-fetch.gif "Layer Fetch function gif")
 
 ### Sending your solution file to Exercism.io
 
 > Press; `SPC Exs`.
 
-![layer-fetch-gif](./resources/images/exercism-layer-send.gif "Layer Fetch function gif")
-
+![layer-fetch-gif](./resources/images/exercism-layer-send.gif "Layer send function gif")
 
 ## TODO
 * implement other features.
